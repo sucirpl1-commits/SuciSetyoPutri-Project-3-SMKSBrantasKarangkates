@@ -8,18 +8,15 @@ btnTema.addEventListener('click', function() {
     btnTema.textContent = '☀️ Mode Terang';
   }
 });
-// 1. Ambil tombol 'Kirim Pesan' yang baru saja kamu beri id="btnKontak"
 const btnBukaModal = document.querySelector('#btnKontak');
 const elemenModal = document.querySelector('#modalKontak');
 const btnTutupModal = document.querySelector('#btnTutupModal');
-// 2. Event saat tombol Kirim Pesan ditekan
 btnBukaModal.addEventListener('click', function(event) {
- event.preventDefault(); // Mencegah link pindah halaman / buka email
- elemenModal.classList.add('show'); // Tampilkan modal
+ event.preventDefault(); 
+ elemenModal.classList.add('show');
 });
-// 3. Event saat tombol Tutup ditekan
 btnTutupModal.addEventListener('click', function() {
- elemenModal.classList.remove('show'); // Sembunyikan modal
+ elemenModal.classList.remove('show'); 
 });
 const btnTop = document.getElementById("btnTop");
 
@@ -44,4 +41,4 @@ function updateClock() {
 }
 
 setInterval(updateClock, 1000);
-updateClock(); // biar langsung tampil, gak nunggu 1 detik
+updateClock();
